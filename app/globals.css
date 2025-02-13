@@ -38,6 +38,27 @@ body {
   background-size: cover;
 }
 
+.homehero{
+  background: url(../public//heroBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutimg{
+  background: url(../public//aboutbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 595px;
+}
+.exploreimg{
+  background: url(../public//explore.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 595px;
+}
+
 .plansgrid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
