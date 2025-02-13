@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
 }
 
@@ -11,47 +11,40 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.roadmaphero{
+.roadmaphero {
   background: url(../public//roadmaphero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bloghero{
+.bloghero {
   background: url(../public//bloghero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.homehero{
+.homehero {
   background: url(../public//heroBg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.aboutimg{
+.aboutimg {
   background: url(../public//aboutbg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 595px;
 }
-.exploreimg{
+.exploreimg {
   background: url(../public//explore.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -59,81 +52,81 @@ body {
   height: 595px;
 }
 
-.plansgrid{
+.plansgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
 }
 
-.reportsgrid{
+.reportsgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
   row-gap: 20px;
 }
 
-.quickgrid{
+.quickgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
 
-.footergrid{
+.footergrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 50px;
 }
 
-.newsgrid{
+.newsgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
 
-@media (max-width:300px){
-  .plansgrid{
+@media (max-width: 300px) {
+  .plansgrid {
     display: flex;
     flex-direction: column;
   }
-  .plansgrid div{
+  .plansgrid div {
     width: 100%;
   }
 }
 
-@media (max-width:300px){
-  .reportsgrid{
+@media (max-width: 300px) {
+  .reportsgrid {
     display: flex;
     flex-direction: column;
   }
-  .reportsgrid div{
+  .reportsgrid div {
     width: 100%;
   }
 }
 
-@media (max-width:350px){
-  .quickgrid{
+@media (max-width: 350px) {
+  .quickgrid {
     display: flex;
     flex-direction: column;
   }
-  .quickgrid div{
+  .quickgrid div {
     width: 100%;
   }
 }
 
-@media (max-width:300px){
-  .footergrid{
+@media (max-width: 300px) {
+  .footergrid {
     display: flex;
     flex-direction: column;
   }
-  .footergrid div{
+  .footergrid div {
     width: 100%;
   }
 }
 
-@media (max-width:350px){
-  .newsgrid{
+@media (max-width: 350px) {
+  .newsgrid {
     display: flex;
     flex-direction: column;
   }
-  .newsgrid div{
+  .newsgrid div {
     width: 100%;
   }
 }
