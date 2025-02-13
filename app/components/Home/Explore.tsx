@@ -41,9 +41,9 @@ const ExplorationHighlights = () => {
                     <Image
                         src="/map.png" // Replace with actual image path
                         alt="African Map with Highlights"
-                        width={500}
-                        height={500}
-                        className="w-full max-w-lg"
+                        width={400}
+                        height={400}
+                        className=" max-w-lg"
                     />
                 </div>
             </section>
