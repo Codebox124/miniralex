@@ -29,7 +29,7 @@ const TokenomicsSection = () => {
                     </p>
 
                     {/* Icons & Subheadings */}
-                    <div className="flex space-x-10">
+                    <div className="flex space-x-10 mb-5">
                         {[1, 2, 3].map((_, index) => (
                             <div key={index} className="text-center">
                                 <span className="text-4xl text-blue-900">💡</span>
@@ -39,9 +39,11 @@ const TokenomicsSection = () => {
                     </div>
 
                     {/* Button */}
-                    <button className="border-2 border-blue-900 text-blue-900 font-bold px-6 py-3 rounded-md shadow-md hover:bg-blue-900 hover:text-white transition">
-                        See Tokenization →
-                    </button>
+                    <button  className="border-2 border-blue-900 text-blue-900 font-bold px-6 py-3 rounded-md shadow-md hover:bg-blue-900 hover:text-white transition">
+                        <a href="/tokenization"> See Tokenization →</a>
+                        </button>
+                        
+
                 </div>
             </section>
         </div>
