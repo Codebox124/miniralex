@@ -18,7 +18,7 @@ export default function Exploration() {
             alt="Mining Exploration"
             width={1200}
             height={600}
-            className="w-full h-[400px] md:h-max"
+            className="w-full h-[300px] sm:h-[400px] md:h-max"
           />
           <div className="absolute top-0 left-0 w-full h-full flex items-center p-6">
             <div className="relative w-max">
@@ -28,7 +28,7 @@ export default function Exploration() {
                 width={400}
                 height={400}
               />
-              <button className="bg-[#172B6B] text-white px-3 py-2 rounded-md shadow-md hover:bg-[#172B6B]/90 transition duration-300 mt-4 md:mt-0 absolute bottom-0 left-0 z-10 mb-10 ml-8 text-sm">
+              <button className="bg-[#172B6B] text-white px-3 py-2 rounded-md shadow-md hover:bg-[#172B6B]/90 transition duration-300 mt-4 md:mt-0 absolute bottom-0 left-0 z-10 mb-8 sm:mb-10 ml-0 sm:ml-5 md:ml-8 text-sm md:text-sm w-max md:scale-100 sm:scale-90 scale-75">
                 DOWNLOAD FEASIBILITY
               </button>
             </div>
@@ -65,7 +65,7 @@ export default function Exploration() {
                 <p className="text-gray-700 text-base">OZ inferred</p>
               </div>
               <div>
-                <h4 className="text-2xl font-extrabold text-yellow-500">
+                <h4 className="text-base sm:text-2xl font-extrabold text-yellow-500">
                   1.8–3.5 G/T.
                 </h4>
                 <p className="text-gray-700 text-lg">Grades Ranging</p>
@@ -138,7 +138,7 @@ export default function Exploration() {
                       ? "INCLUDING CSA AND SRK"
                       : "DOCUMENTATION"}
                   </p>
-                  <p className="text-xs text-gray-500 font-medium flex items-center justify-between">
+                  <p className="text-xs text-gray-500 font-medium flex items-center justify-between mt-5">
                     <span>PDF 15.44 MB</span>
                     <span>
                       <FiDownload className=" text-gray-500" />
