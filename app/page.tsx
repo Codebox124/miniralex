@@ -160,7 +160,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white p-6 md:p-12 rounded-2xl shadow-md flex flex-col md:flex-row items-center gap-6 max-w-5xl mx-auto">
+      <section className="bg-white p-6 md:p-12 rounded-2xl  flex flex-col md:flex-row items-center gap-6 max-w-7xl mx-auto">
         <div className="w-full md:w-1/2">
           <Image
             src="/home/workers.png"

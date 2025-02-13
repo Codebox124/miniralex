@@ -5,9 +5,10 @@ function Footer() {
   return (
     <footer className='bg-white text-black'>
            <Quick />
-         <section className='h-[360px]'>
+         <section className=' md:my-10'>
             <img src="/mineralexsection.png" alt="mineralex" className='w-full h-ful object-cover' />
         </section>
+
         <FooterBottom />
      
     </footer>

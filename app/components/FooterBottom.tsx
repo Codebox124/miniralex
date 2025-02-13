@@ -3,7 +3,7 @@ import React from 'react'
 import { RxArrowTopRight } from "react-icons/rx";
 function FooterBottom() {
   return (
-    <div className='w-full p-[35px] md:p-[70px] pb-[20px]'>
+    <div className='w-full p-[35px] md:mt-20 md:p-[70px] pb-[20px]'>
         <div className='flex flex-col md:flex-row mb-[30px] items-start'>
             <div className=' w-full md:w-[30%] mb-[25px]'>
                 <img src="/logo.png" alt="logo" className='mb-[30px]' />
