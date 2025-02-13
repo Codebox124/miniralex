@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +22,97 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.roadmaphero{
+  background: url(../public//roadmaphero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bloghero{
+  background: url(../public//bloghero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plansgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+}
+
+.reportsgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  row-gap: 20px;
+}
+
+.quickgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.footergrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 50px;
+}
+
+.newsgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+@media (max-width:300px){
+  .plansgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .plansgrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:300px){
+  .reportsgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .reportsgrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:350px){
+  .quickgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .quickgrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:300px){
+  .footergrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .footergrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:350px){
+  .newsgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .newsgrid div{
+    width: 100%;
+  }
 }
