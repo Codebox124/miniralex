@@ -51,14 +51,14 @@ export default function Home() {
 
       {/* About Section */}
       <section
-        className="p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="p-6 md:p-12 flex flex-col aboutimg  md:grid-cols-2  gap-6"
         style={{
-          backgroundImage: "url('/home/about.png')",
+
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       >
-        <Card className="p-6 shadow-lg w-[80%]">
+        <Card className="w-full md:w-1/2  bg-white p-8 shadow-lg rounded-lg border-l-8 border-yellow-400">
           <h3 className="text-[#172B6B] font-bold text-sm uppercase">
             | ABOUT US
           </h3>
@@ -66,38 +66,52 @@ export default function Home() {
             WE MAKE SUSTAINABLE MINING
           </h2>
           <p className="mt-2">
-            Our mining approach ensures sustainability through innovation and
-            technology.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui...
+          </p>
+          <p className="text-gray-600 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p className="text-gray-600 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <Button className="mt-4 bg-[#172B6B] text-white">Learn More</Button>
         </Card>
       </section>
 
       {/* Community Impact Section */}
-      <section className="p-6 md:p-12 bg-gray-100">
-        <h2 className="text-3xl font-bold text-center text-[#F8D835]">
-          WE WANT TO MOVE FORWARD TOGETHER
-        </h2>
-        <div className="flex items-center justify-evenly gap-6 mt-6">
-          <img
-            src="/home/impact1.png"
-            alt="Impact 1"
-            className="rounded-lg shadow-lg"
-            width={300}
-            height={300}
-          />
-          <img
-            src="/home/impact2.png"
-            alt="Impact 2"
-            className="rounded-lg shadow-lg"
-            width={300}
-            height={300}
-          />
+      <section className="flex flex-col max-w-7xl mx-auto md:flex-row items-center  px-6 md:px-20 py-12">
+        {/* Left Side - Images */}
+        <div className="flex flex-row gap-4 w-full md:w-1/2">
+          <div className="relative  ">
+            <Image
+              src="/com.png"
+              alt="Mining operation"
+              width={250}
+              height={500}
+              className=""
+            />
+          </div>
+          <div className="relative mt-9 ">
+            <Image
+              src="/com_2.png"
+              alt="Worker at factory"
+              width={250}
+              height={500}
+              className=""
+            />
+          </div>
         </div>
-        <div className="text-center mt-6">
-          <Button className="bg-[#172B6B] text-white">
-            Our Projects for Future
-          </Button>
+
+        {/* Right Side - Text Content */}
+        <div className="w-full md:w-1/2 text-left md:pl-12">
+          <h3 className="text-blue-800 font-bold text-lg uppercase">Community Impact</h3>
+          <h2 className="text-yellow-500 font-bold text-3xl md:text-4xl mt-2">We Want To Move Forward Together</h2>
+          <p className="text-gray-600 mt-4 text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.
+          </p>
+          <button className="mt-6 bg-blue-900 text-white font-semibold py-3 px-6 rounded-md">
+            Our Projects For Future
+          </button>
         </div>
       </section>
 
