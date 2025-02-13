@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
       </div>
       <nav className="flex flex-col space-y-4">
         <Link href="/" className={getLinkClass("/")}>
-          Main Home
+          Home
         </Link>
         <Link href="/about" className={getLinkClass("/about")}>
           About Us
@@ -64,7 +64,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         >
           Investor Portal
         </Link>
-        <Link href="/daily-blogs" className={getLinkClass("/daily-blogs")}>
+        <Link href="/blog" className={getLinkClass("/daily-blogs")}>
           Daily Blogs
         </Link>
         <Link href="/contact" className={getLinkClass("/contact")}>
