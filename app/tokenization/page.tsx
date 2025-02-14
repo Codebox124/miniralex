@@ -54,56 +54,47 @@ const Page = () => {
         </div>
 
         {/* Transparent Allocation Section */}
-        <div className="bg-white text-black rounded-lg shadow-lg p-6 mt-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-evenly gap-6">
-          <div className="text-center md:text-left">
-            <h3 className="text-blue-900 font-semibold text-xs md:text-sm">
-              SUPPLY DETAILS & DISTRIBUTION
-            </h3>
-            <h2 className="text-yellow-500 font-bold text-lg md:text-xl">
-              TRANSPARENT ALLOCATION
-            </h2>
+        <div className="bg-white text-black py-20 rounded-lg p-6 mt-10 mx-auto flex flex-col md:flex-row items-center justify-evenly gap-6">
+  <div className="text-center md:text-left">
+    <h3 className="text-blue-900 font-semibold text-sm md:text-lg">
+      SUPPLY DETAILS & DISTRIBUTION
+    </h3>
+    <h2 className="text-yellow-500 font-bold text-xl md:text-2xl">
+      TRANSPARENT ALLOCATION
+    </h2>
 
-            <div className="flex flex-col gap-3 mt-4">
-              {[
-                { label: "Team Development", percentage: "90%", color: "pink" },
-                { label: "Community Growth", percentage: "70%", color: "blue" },
-                {
-                  label: "Community Growth",
-                  percentage: "70%",
-                  color: "green",
-                },
-                {
-                  label: "Team Development",
-                  percentage: "70%",
-                  color: "yellow",
-                },
-                {
-                  label: "Community Growth",
-                  percentage: "70%",
-                  color: "purple",
-                },
-              ].map(({ label, percentage, color }, index) => (
-                <p
-                  key={index}
-                  className={`border-l-4 border-${color}-500 pl-2 text-sm`}
-                >
-                  {label}{" "}
-                  <span className={`text-${color}-500`}>{percentage}</span>
-                </p>
-              ))}
-            </div>
-          </div>
+    <div className="flex flex-col gap-3 mt-4">
+      {[
+        { label: "Team Development", percentage: "90%", color: "pink" },
+        { label: "Community Growth", percentage: "70%", color: "blue" },
+        { label: "Community Growth", percentage: "70%", color: "green" },
+        { label: "Team Development", percentage: "70%", color: "yellow" },
+        { label: "Community Growth", percentage: "70%", color: "purple" },
+      ].map(({ label, percentage, color }, index) => (
+        <p
+          key={index}
+          className={`border-l-4 border-${color}-500 pl-3 text-base md:text-lg font-medium`}
+        >
+          {label}{" "}
+          <span className={`text-${color}-500 font-bold text-lg md:text-xl`}>
+            {percentage}
+          </span>
+        </p>
+      ))}
+    </div>
+  </div>
 
-          <div className="w-48 h-48 md:w-64 md:h-64">
-            <Image
-              src="/pie-chart.png"
-              alt="Token Allocation Chart"
-              width={300}
-              height={300}
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </div>
+  <div className="w-56 h-56 md:w-72 md:h-72">
+    <Image
+      src="/pie-chart.png"
+      alt="Token Allocation Chart"
+      width={300}
+      height={300}
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
+
       </section>
     </>
   );

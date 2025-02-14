@@ -187,9 +187,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <button className="mt-6 px-6 py-2 border border-[#172B6B] text-[#172B6B] rounded-lg hover:bg-[#172B6B] hover:text-white transition-all ml-auto mr-auto w-max md:ml-0 md:mr-0">
-            See Tokenization →
-          </button>
+          
+          <a href="/tokenization">
+            <button className="mt-6 px-6 py-2 border border-[#172B6B] text-[#172B6B] rounded-lg hover:bg-[#172B6B] hover:text-white transition-all ml-auto mr-auto w-max md:ml-0 md:mr-0">
+              See Tokenization →
+            </button>
+          </a>
         </div>
       </section>
     </div>
