@@ -53,7 +53,6 @@ export default function Home() {
       <section
         className="p-6 md:p-12 flex flex-col aboutimg  md:grid-cols-2  gap-6"
         style={{
-
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
@@ -66,20 +65,24 @@ export default function Home() {
             WE MAKE SUSTAINABLE MINING
           </h2>
           <p className="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, qui...
           </p>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <p className="text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <Button className="mt-4 bg-[#172B6B] text-white">Learn More</Button>
         </Card>
       </section>
 
       {/* Community Impact Section */}
-      <section className="flex flex-col max-w-7xl mx-auto md:flex-row items-center  px-6 md:px-20 py-12">
+      <section className="flex flex-col max-w-7xl mx-auto md:flex-row items-center  px-6 md:px-20 py-12 mt-28 mb-16 sm:mt-10 sm:mb-10">
         {/* Left Side - Images */}
         <div className="flex flex-row gap-4 w-full md:w-1/2">
           <div className="relative  ">
@@ -103,11 +106,17 @@ export default function Home() {
         </div>
 
         {/* Right Side - Text Content */}
-        <div className="w-full md:w-1/2 text-left md:pl-12">
-          <h3 className="text-blue-800 font-bold text-lg uppercase">Community Impact</h3>
-          <h2 className="text-yellow-500 font-bold text-3xl md:text-4xl mt-2">We Want To Move Forward Together</h2>
+        <div className="w-full md:w-1/2 text-left md:pl-12 mt-10 sm:mt-16">
+          <h3 className="text-blue-800 font-bold text-lg uppercase">
+            Community Impact
+          </h3>
+          <h2 className="text-yellow-500 font-bold text-3xl md:text-4xl mt-2">
+            We Want To Move Forward Together
+          </h2>
           <p className="text-gray-600 mt-4 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ul.
           </p>
           <button className="mt-6 bg-blue-900 text-white font-semibold py-3 px-6 rounded-md">
             Our Projects For Future
@@ -187,7 +196,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          
+
           <a href="/tokenization">
             <button className="mt-6 px-6 py-2 border border-[#172B6B] text-[#172B6B] rounded-lg hover:bg-[#172B6B] hover:text-white transition-all ml-auto mr-auto w-max md:ml-0 md:mr-0">
               See Tokenization →
