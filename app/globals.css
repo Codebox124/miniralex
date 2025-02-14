@@ -38,6 +38,13 @@ body {
   background-size: cover;
 }
 
+.presalehero{
+  background: url(../public//bloghero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .homehero{
   background: url(../public//heroBg.png);
   background-position: center;
@@ -88,6 +95,12 @@ body {
   gap: 50px;
 }
 
+.dashgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+}
+
 @media (max-width:300px){
   .plansgrid{
     display: flex;
@@ -134,6 +147,16 @@ body {
     flex-direction: column;
   }
   .newsgrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:550px){
+  .dashgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .dashgrid div{
     width: 100%;
   }
 }
