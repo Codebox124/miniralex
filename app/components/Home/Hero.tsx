@@ -62,8 +62,8 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           Roadmap
         </Link>
         <Link
-          href="/investor-portal"
-          className={getLinkClass("/investor-portal")}
+          href="/investor"
+          className={getLinkClass("/investor")}
         >
           Investor Portal
         </Link>
