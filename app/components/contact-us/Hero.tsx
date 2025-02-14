@@ -1,16 +1,19 @@
-"use client";
+'use client'
+import React, { useState } from 'react'
+import { IoClose, IoMenu } from "react-icons/io5";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { motion } from 'framer-motion';
+import { frombotttomtotop } from '../animations';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-import React, { useState } from "react";
-import { IoMenu, IoClose } from "react-icons/io5";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+
 
 const menuVariants = {
   open: { x: 0, opacity: 1 },
   closed: { x: "-100%", opacity: 0 },
 };
-
 interface SidebarProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
@@ -59,8 +62,8 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           Roadmap
         </Link>
         <Link
-          href="/investor"
-          className={getLinkClass("/investor")}
+          href="/investor-portal"
+          className={getLinkClass("/investor-portal")}
         >
           Investor Portal
         </Link>
@@ -75,35 +78,38 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   );
 };
 
-interface HeroProps {
-  heroImg: string;
-  path: string;
-  description: string;
-}
 
-export default function Hero({ heroImg, path, description }: HeroProps) {
+
+function Hero() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="w-full md:h-[75vh] h-max pb-10 roadmaphero flex flex-col items-end">
-      <div className="flex items-center mt-[35px] w-full">
-        <div className="bg-[#F8D835] rounded-tr-[40px] rounded-br-[40px] h-[fit-content] flex justify-end w-[100px] py-[10px] mr-[15px]">
+    <div className='w-full h-[75vh] bloghero flex flex-col items-end text-white'>
+      <div className='flex items-center  mt-[35px]  w-full'>
+        <div className='bg-[#F8D835] rounded-tr-[40px] rounded-br-[40px] h-[fit-content] flex justify-end  w-[100px] py-[10px] mr-[15px]'>
           <IoMenu
             className="mr-[10px] text-[#172B6B] w-[39px] h-[30px] cursor-pointer"
             onClick={() => setIsOpen(true)}
           />
         </div>
-        <img src={heroImg} alt="logo" />
+        <img src="/logo.png" alt="logo" />
       </div>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="mt-[13%] w-[95%] text-white">
-        <motion.p className="flex flex-col md:flex-row md:items-center text-md md:text-xl">
-          HOME <span className="text-[#F8D835]">→</span> {description}
-        </motion.p>
-        <motion.h1 className="text-[#F8D835] text-3xl md:text-5xl font-bold mt-[20px]">
-          {path}
-        </motion.h1>
+      <div className='mt-[13%]  w-[95%]'>
+        <motion.p
+          initial={frombotttomtotop.initial}
+          animate={frombotttomtotop.animate}
+          transition={frombotttomtotop.transition}
+          viewport={frombotttomtotop.viewport}
+          className='flex flex-col md:flex-row md:items-center text-md md:text-xl'>HOME <MdKeyboardArrowRight className='text-[#F8D835]' />GET HELP FROM US</motion.p>
+        <motion.h1
+          initial={frombotttomtotop.initial}
+          animate={frombotttomtotop.animate}
+          transition={frombotttomtotop.transition}
+          viewport={frombotttomtotop.viewport}
+          className='text-[#F8D835] text-3xl md:text-5xl font-bold mt-[20px]'>CONTACT US</motion.h1>
       </div>
     </div>
-  );
+  )
 }
+
+export default Hero

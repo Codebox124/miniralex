@@ -24,7 +24,15 @@ body {
   background-size: cover;
 }
 
-.homehero {
+
+.presalehero{
+  background: url(../public//bloghero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homehero{
   background: url(../public//heroBg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -74,8 +82,18 @@ body {
   gap: 50px;
 }
 
-@media (max-width: 300px) {
-  .plansgrid {
+@media (max-width:300px){
+  .plansgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .plansgrid div{
+    width: 100%;
+  }
+}
+
+@media (max-width:300px){
+  .plansgrid{
     display: flex;
     flex-direction: column;
   }
@@ -186,5 +204,14 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@media (max-width:550px){
+  .dashgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .dashgrid div{
+    width: 100%;
   }
 }
